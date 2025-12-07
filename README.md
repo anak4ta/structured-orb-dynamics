@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17839162.svg)](https://doi.org/10.5281/zenodo.17839162)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17839414.svg)](https://doi.org/10.5281/zenodo.17839414)
+
 Structured Orb Dynamics
 
 Unified Manuscript and Data Repository
@@ -8,6 +11,8 @@ The manuscript, code, and the PR018 analysis are kept together so the workflow i
 The project looks at image-plane motion using a set of simple geometric tools.
 Curvature, basic derivative estimates, and a small state model were used to summarize the motion seen in a stabilized infrared recording (PR018).
 No physical model is assumed; everything is based on what can be measured directly in the frames.
+
+Install the usual Python packages (numpy, scipy, matplotlib). Nothing special is required.
 
 Repository layout
 
@@ -31,6 +36,13 @@ State-probability traces and related output.
 supplement/
 Notes on the GIMBAL video.
 Explains what could be evaluated and what could not due to parallax and missing metadata.
+
+Running the scripts will recreate the feature series and the plots.  
+Paths may need to be changed depending on your setup.
+
+python tracking/run_tracking.py
+python features/compute_features.py
+python model/run_state_model.py
 
 PR018 summary
 
