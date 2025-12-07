@@ -32,9 +32,9 @@ python tracking/run_tracking.py
 python features/compute_features.py  
 python model/run_state_model.py
 
-### PR018 Summary
+### PR-018 Summary
 
-PR018 is the only dataset where a usable trajectory could be reconstructed.  
+PR-018 is the only dataset where a usable trajectory could be reconstructed.  
 Basic steps:
 
 – stabilize the frames around the target  
