@@ -11,7 +11,7 @@ The project looks at image-plane motion using a set of simple geometric tools.
 Curvature, basic derivative estimates, and a small state model were used to summarize the motion seen in a stabilized infrared recording (PR018).  
 No physical model is assumed; everything is based on what can be measured directly in the frames.
 
-### Install the usual Python packages (numpy, scipy, matplotlib). Nothing special is required.
+Install the usual Python packages (numpy, scipy, matplotlib). Nothing special is required.
 
 ### Repository layout
 
@@ -25,8 +25,8 @@ results/  Figures and probability traces.
 
 supplement/  Notes on the GIMBAL dataset (only qualitative observations possible).
 
-### Running the scripts will recreate the feature series and the plots.  
-### Paths may need to be changed depending on your setup.
+Running the scripts will recreate the feature series and the plots.  
+Paths may need to be changed depending on your setup.
 
 python tracking/run_tracking.py  
 python features/compute_features.py  
