@@ -17,7 +17,7 @@ Repository layout
 
 manuscript/  PDF and source files. Full write-up (Parts I–IV).
 
-code/  Small set of scripts for tracking, smoothing, and feature extraction.
+code/   Small set of scripts for tracking, smoothing, and feature extraction.
 
 data/  Processed track for PR018 (not the raw video). Feature series used in the plots.
 
