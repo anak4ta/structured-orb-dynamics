@@ -8,7 +8,7 @@ date-released: "2025-12-08"
 authors:
   - family-names: "Perry"
     given-names: "Cassandra"
-    orcid: "https://orcid.org/0000-0000-0000-0000"   # If you prefer, we can remove this.
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # optional
 
 keywords:
   - motion-state modeling
@@ -29,10 +29,10 @@ repository-code: "https://github.com/cperryresearch/structured-orb-dynamics"
 
 preferred-citation:
   type: article
+  title: "Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.1.0)"
   authors:
     - family-names: "Perry"
       given-names: "Cassandra"
-  title: "Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.1.0)"
   year: 2025
   doi: "10.5281/zenodo.17852764"
   publisher: "Zenodo"
