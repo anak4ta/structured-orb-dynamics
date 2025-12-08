@@ -1,14 +1,14 @@
 cff-version: 1.2.0
 message: "If you use this repository, data products, or classifier implementation, please cite the following work."
-title: "Structured Orb Dynamics: Unified Framework, Classifier, and Data Repository"
-doi: "10.5281/zenodo.17839162"
-version: "1.0.0"
-date-released: "2025-12-07"
+title: "Structured Orb Dynamics: Unified Manuscript and Data Repository"
+doi: "10.5281/zenodo.17852764"
+version: "1.1.0"
+date-released: "2025-12-08"
 
 authors:
   - family-names: "Perry"
     given-names: "Cassandra"
-    orcid: "https://orcid.org/0000-0000-0000-0000"   # ← optional, remove if you prefer
+    orcid: "https://orcid.org/0000-0000-0000-0000"   # If you prefer, we can remove this.
 
 keywords:
   - motion-state modeling
@@ -20,6 +20,8 @@ keywords:
   - PR-018
   - GIMBAL
   - orb motion classifier
+  - probabilistic modeling
+  - stabilized infrared imagery
 
 license: "MIT"
 
@@ -30,8 +32,8 @@ preferred-citation:
   authors:
     - family-names: "Perry"
       given-names: "Cassandra"
-  title: "Structured Orb Dynamics: Unified Framework, Classifier, and Data Repository"
+  title: "Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.1.0)"
   year: 2025
-  doi: "10.5281/zenodo.17839162"
+  doi: "10.5281/zenodo.17852764"
   publisher: "Zenodo"
-  version: "1.0.0"
+  url: "https://doi.org/10.5281/zenodo.17852764"
