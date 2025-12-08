@@ -25,21 +25,21 @@ https://zenodo.org/records/17856369/files/Structured_Orb_Dynamics___Unified_Manu
 
 ### Repository Layout
 
-manuscript/  PDF and source files. Full write-up (Parts I–IV).
+manuscript/ PDF and source files. Full write-up (Parts I–IV).
 
-code/   Small set of scripts for tracking, smoothing, and feature extraction.
+code/ Small set of scripts for tracking, smoothing, and feature extraction.
 
-data/  Processed track for PR018 (not the raw video). Feature series used in the plots.
+data/ Processed track for PR018 (not the raw video). Feature series used in the plots.
 
-results/  Figures and probability traces.
+results/ Figures and probability traces.
 
-supplement/  Notes on the GIMBAL dataset (only qualitative observations possible).
+supplement/ Notes on the GIMBAL dataset (only qualitative observations possible).
 
-Running the scripts will recreate the feature series and the plots.  
+Running the scripts will recreate the feature series and the plots.
 Paths may need to be changed depending on your setup.
 
-python tracking/run_tracking.py  
-python features/compute_features.py  
+python tracking/run_tracking.py
+python features/compute_features.py
 python model/run_state_model.py
 
 ### PR-018 Summary
