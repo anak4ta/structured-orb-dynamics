@@ -1,39 +1,45 @@
 cff-version: 1.2.0
-message: "If you use this repository, data products, or classifier implementation, please cite the following work."
+message: "If you use this repository, the classifier, or the manuscript, please cite the following work."
+
 title: "Structured Orb Dynamics: Unified Manuscript and Data Repository"
-doi: "10.5281/zenodo.17852764"
-version: "1.1.0"
+version: "1.2.0"
+doi: "10.5281/zenodo.17856369"
 date-released: "2025-12-08"
 
 authors:
   - family-names: "Perry"
     given-names: "Cassandra"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"  # optional
+    affiliation: "Independent Researcher"
 
 keywords:
   - motion-state modeling
-  - trajectory reconstruction
   - curvature analysis
+  - infrared trajectory reconstruction
+  - image-plane kinematics
   - UAP datasets
-  - state-space models
-  - geometric motion analysis
   - PR-018
-  - GIMBAL
-  - orb motion classifier
-  - probabilistic modeling
-  - stabilized infrared imagery
+  - geometric state inference
+  - dynamical motion analysis
 
-license: "MIT"
+abstract: >
+  This repository provides the unified manuscript, code, processed data products,
+  and results for Structured Orb Dynamics, a geometry-based framework for
+  analyzing motion in infrared aerial datasets lacking physical calibration
+  metadata. The approach relies exclusively on image-plane measurements—
+  trajectory extraction, curvature diagnostics, and a small discrete motion-state
+  classifier. PR-018 is used as an example dataset to illustrate how geometric
+  inference can be performed without assumptions about range, propulsion, or
+  physical mechanism.
 
 repository-code: "https://github.com/cperryresearch/structured-orb-dynamics"
+url: "https://doi.org/10.5281/zenodo.17856369"
 
 preferred-citation:
   type: article
-  title: "Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.1.0)"
   authors:
     - family-names: "Perry"
       given-names: "Cassandra"
+  title: "Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.2.0)"
   year: 2025
-  doi: "10.5281/zenodo.17852764"
-  publisher: "Zenodo"
-  url: "https://doi.org/10.5281/zenodo.17852764"
+  doi: "10.5281/zenodo.17856369"
+  url: "https://doi.org/10.5281/zenodo.17856369"
