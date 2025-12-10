@@ -104,7 +104,7 @@ https://doi.org/10.5281/zenodo.178467867
 Structured Orb Dynamics welcomes clear, reproducible, and geometry-focused contributions.  
 If you would like to participate, please read the project’s contribution guidelines:
 
-➡️ **See: [CONTRIBUTING.md](CONTRIBUTING.md)**
+**See: [CONTRIBUTING.md](CONTRIBUTING.md)**
 
 ### What kinds of contributions are encouraged?
 
