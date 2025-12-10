@@ -1,57 +1,50 @@
 # Changelog
+All notable changes to this project will be documented in this file.
 
-All notable changes to this project will be documented in this file.  
-The format follows [Semantic Versioning](https://semver.org/).
+The format is based on the guidelines of Keep a Changelog  
+(https://keepachangelog.com/en/1.0.0/),  
+and this project adheres to semantic versioning.
 
----
-
-## [1.2.0] – 2025-12-08
+## [1.2.0] - 2025-12-10
 ### Added
-- Full **Part III — Motion-State Classifier** (state definitions, observation model, likelihood formulation, transition model, posterior inference, and implementation outline).
-- Full **Part IV — PR-018 Deep Analysis**, including:
-  - Trajectory reconstruction summary
-  - Curvature and feature extraction
-  - State probability results
-  - Posterior interpretation, consistency assessment, and failure modes
-  - Formal summary of the PR-018 geometric behavior
-- **GIMBAL Supplementary Analysis** (qualitative observations, no quantitative results).
-- **Numerical Stability and Error Propagation** section in Part II.
-- **Geometric Limits** section in Part II.
-- Standardized figure environments (`\orbfig`, `\orbfigwide`) across the manuscript.
-- **Author Contributions** section.
-- **CITATION.cff** for formal citation metadata.
-- **Download links** (PDF and ZIP) added to README for v1.2.0.
-- Zenodo DOI badge for version release.
+- Updated unified manuscript (PDF and LaTeX source) with refined text and clarified methodology.
+- Additional explanations of curvature, derivative estimation, and motion-state segmentation.
+- Revised PR-018 trajectory figure based on stabilized and compensated data.
+- Expanded descriptions of methodology and analysis workflow in the manuscript.
+- DOI badges for versioned release and concept record added to README.
 
 ### Changed
-- Repository structure organized into four formal manuscript parts.
-- Renamed former "Part III" to **Part IV** to reflect final structure.
-- Updated README to reflect the v1.2.0 release, including corrected DOI references.
-- Improved manuscript consistency (labels, section numbering, cross-references).
-- Polished abstract, introduction, and framework descriptions for clarity and formal tone.
+- Improved clarity and accessibility of the Abstract and Contributions sections.
+- Edited terminology for consistency across the manuscript and repository.
+- Updated README for professional documentation and inclusion of the research roadmap.
 
 ### Fixed
-- Overfull and underfull box warnings in LaTeX.
-- Incorrect references to figure macros (`\orbfigwide`).
-- Duplicate DOI badge display in README.
-- Misaligned Part numbering across main.tex and manuscript tree.
+- Resolved minor inconsistencies in figure references within the manuscript.
+- Corrected small typographical issues across Parts I–IV.
+
+### Removed
+- Transitional language from earlier drafts to maintain a consistent scientific tone.
 
 ---
 
-## [1.1.0] – 2025-12-07
+## [1.1.0] - 2025-12-05
 ### Added
-- Initial unified manuscript (Parts I–II).
-- Curvature model, discrete estimator, smoothing methods.
-- Bootstrap-based uncertainty discussion.
-- Preliminary PR-018 trajectory and curvature plots.
-- Initial PR-018 state model output.
-- README overview and project structure.
-- Zenodo DOI and GitHub integration.
+- Initial unified manuscript combining Parts I–III into a single structure.
+- PR-018 analysis section integrated as Part IV.
+- Preliminary figures for the reconstructed trajectory and feature series.
+- Basic repository layout (manuscript, code, data, results, supplement).
+
+### Changed
+- Reorganized LaTeX structure for clearer compilation and navigation.
+- Updated code comments for tracking and feature extraction scripts.
 
 ---
 
-## [1.0.0] – 2025-12-06
+## [1.0.0] - 2025-12-03
 ### Added
-- Repository created.
-- Initial code for trajectory extraction, smoothing, and feature computation.
-- First draft of manuscript scaffold.
+- First public release of the Structured Orb Dynamics project.
+- Baseline geometric framework: curvature, velocity, acceleration, and state segmentation.
+- Initial PR-018 feature extraction pipeline.
+- Zenodo concept DOI and project scaffolding.
+
+---
