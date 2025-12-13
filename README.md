@@ -45,7 +45,7 @@ python model/run_state_model.py
 
 ## PR-018 Summary
 
-PR-018 is the only dataset where a stable trajectory could be reconstructed.  
+PR-018 is the only dataset in this release where a stable trajectory could be reconstructed.  
 The workflow consists of:
 
 1. Frame stabilization around the target  
@@ -61,19 +61,21 @@ The results reproduced here match those described in the manuscript.
 ## GIMBAL Note
 
 A brief qualitative write-up is included.  
-No trajectory could be extracted, and therefore no curvature or state estimates are available.
+No trajectory could be extracted, and therefore no curvature or state estimates are available within the current framework.
 
 ---
 
 ## Research Roadmap
 
+Items listed below are conceptual directions and do not imply implementation in the current release.
+
 The current release corresponds to the unified foundation (Parts I–IV).  
 Planned future work includes:
 
-- Part IV: Instrumentation and reconstruction accuracy  
-- Part V: Comparative multi-dataset analysis  
-- Part VI: Orb Motion Classifier (machine learning)  
-- Part VII: Physics-informed kinematic envelope analysis  
+- Part V: Instrumentation and reconstruction accuracy  
+- Part VI: Comparative multi-dataset analysis  
+- Part VII: Orb Motion Classifier (machine learning)  
+- Part VIII: Physics-informed kinematic envelope analysis  
 
 These components will be added in future versioned releases.
 
@@ -81,7 +83,7 @@ These components will be added in future versioned releases.
 
 ## Citation
 
-If this work is used, please cite:
+If this repository or its methods are used, please cite:
 
 Perry, C. (2025). *Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.2.0).* Zenodo.  
 https://doi.org/10.5281/zenodo.17856369
@@ -90,36 +92,11 @@ For references to the evolving project and its complete version history, use the
 https://doi.org/10.5281/zenodo.178467867
 
 ### BibTeX
-@misc{perry2025_structured_orb_dynamics_v120,  
-  author       = {Perry, Cassandra},  
-  title        = {Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.2.0)},  
-  year         = {2025},  
-  doi          = {10.5281/zenodo.17856369},  
-  publisher    = {Zenodo},  
-  url          = {https://doi.org/10.5281/zenodo.17856369}  
+@misc{perry2025_structured_orb_dynamics_v120,
+  author       = {Perry, Cassandra},
+  title        = {Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.2.0)},
+  year         = {2025},
+  doi          = {10.5281/zenodo.17856369},
+  publisher    = {Zenodo},
+  url          = {https://doi.org/10.5281/zenodo.17856369}
 }
-
-## Community & Contributions
-
-Structured Orb Dynamics welcomes clear, reproducible, and geometry-focused contributions.  
-If you would like to participate, please read the project’s contribution guidelines:
-
-**See: [CONTRIBUTING.md](CONTRIBUTING.md)**
-
-### What kinds of contributions are encouraged?
-
-- Reproducibility checks for figures or classifier outputs  
-- Improvements in clarity of definitions, notation, or documentation  
-- Small refinements that enhance determinism or transparency  
-- Well-reasoned, scope-aligned discussions about geometric inference  
-
-### What is outside the scope?
-
-- Physical speculation (range, speed, size, intent, etc.)  
-- Platform or sensor calibration  
-- Claims about object identity or nature  
-- Non-deterministic code changes  
-
-Pinned Issue #1 gives a concise overview of project scope and engagement expectations.
-
-We appreciate contributions that uphold clarity, reproducibility, and rigor.
