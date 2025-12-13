@@ -26,7 +26,7 @@ https://zenodo.org/records/17904630/files/Structured_Orb_Dynamics___Unified_Manu
 
 ## Repository Layout
 
-`manuscript/` – PDF and LaTeX source files for the full write-up (Parts I–IV).  
+`manuscript/` – PDF and LaTeX source files for the full write-up (Parts I–V).  
 `code/` – Scripts for tracking, smoothing, curvature estimation, and feature extraction.  
 `data/` – Processed PR-018 trajectory and feature series used in the figures.  
 `results/` – Plots, traces, and reconstructed motion visualizations.  
