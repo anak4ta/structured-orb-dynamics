@@ -1,5 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17856369.svg)](https://doi.org/10.5281/zenodo.17856369)
-[![Concept DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.178467867.svg)](https://doi.org/10.5281/zenodo.178467867)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17846786.svg)](https://doi.org/10.5281/zenodo.17846786)
 
 # Structured Orb Dynamics  
 Unified Manuscript and Data Repository (v1.2.0)
@@ -84,13 +83,15 @@ These components will be added in future versioned releases.
 
 ## Citation
 
+Use the Zenodo concept DOI above to cite the latest version of this repository.
+
 If this repository or its methods are used, please cite:
 
 Perry, C. (2025). *Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.2.0).* Zenodo.  
-https://doi.org/10.5281/zenodo.17856369
+https://doi.org/10.5281/zenodo.17904630
 
 For references to the evolving project and its complete version history, use the concept DOI:  
-https://doi.org/10.5281/zenodo.178467867
+https://doi.org/10.5281/zenodo.17846786
 
 ### BibTeX
 @misc{perry2025_structured_orb_dynamics_v120,
