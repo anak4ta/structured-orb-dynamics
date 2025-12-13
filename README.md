@@ -67,15 +67,12 @@ No trajectory could be extracted, and therefore no curvature or state estimates 
 
 ## Research Roadmap
 
-Items listed below are conceptual directions and do not imply implementation in the current release.
+The current release corresponds to the unified foundation (Parts I–V).
 
-The current release corresponds to the unified foundation (Parts I–IV).  
 Planned future work includes:
-
-- Part V: Instrumentation and reconstruction accuracy  
-- Part VI: Comparative multi-dataset analysis  
-- Part VII: Orb Motion Classifier (machine learning)  
-- Part VIII: Physics-informed kinematic envelope analysis  
+- Part VI: Comparative multi-dataset analysis
+- Part VII: Orb Motion Classifier (machine learning)
+- Part VIII: Physics-informed kinematic envelope analysis
 
 These components will be added in future versioned releases.
 
