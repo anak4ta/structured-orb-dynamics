@@ -21,13 +21,13 @@ These documents are intended to **sit alongside** application-specific analyses
 **Geometry-First Motion Analysis: A Descriptive Standard**
 
 A short, reader-facing document defining the analytical posture used when
-motion can be observed but certainty is unavailable.  
-This document serves as a *methodological compass* — a guide for how analysis
-is conducted under constraint.
+motion can be observed but certainty is unavailable.
 
-📄 **[Download the Reader Standard (PDF)](A_Geometry_First_Motion_Analysis__A_Descriptive_Standard.pdf)**
+This document serves as a **methodological compass** — a guide for how
+analysis is conducted under constraint.
 
----
+📄 **[Download the Reader Standard (PDF)](geometry-first-descriptive-standard.pdf)**
+
 
 ## Full Methodology — Technical Manuscript (Map)
 
@@ -36,14 +36,13 @@ is conducted under constraint.
 A longer technical manuscript detailing assumptions, scope, limitations,
 and the structure of geometry-first motion analysis.
 
-This document functions as a *methodological map* — supporting careful,
+This document functions as a **methodological map**, supporting careful,
 reproducible analysis once orientation is established.
 
-📄 **[Download the Full Manuscript (PDF)](A_Geometry_First_Approach_to_Motion_Analysis_Under_Data_Constraints.pdf)**
+📄 **[Download the Full Manuscript (PDF)](geometry-first-motion-analysis-under-data-constraints.pdf)**
 
----
 
-### Notes on Viewing
+## Notes on Viewing
 
-GitHub may not render PDFs inline in all browsers.  
-If a document does not display correctly, please download and view it locally.
+GitHub may not render PDFs inline in all browsers.
+If a document does not display correctly, please download and view locally.
