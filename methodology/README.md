@@ -1,3 +1,7 @@
+## 📍 Geometry-First Motion Analysis
+
+Looking for the Geometry-First framework? Start with the [methodology folder here](https://github.com/cperryresearch/structured-orb-dynamics/tree/main/methodology).
+
 # Geometry-First Motion Analysis (Methodology)
 
 This directory contains methodological companion documents describing a
