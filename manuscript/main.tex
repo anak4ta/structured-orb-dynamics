@@ -1,0 +1,233 @@
+% ======================================
+% MAIN MANUSCRIPT STRUCTURE (CLEANED)
+% ======================================
+
+\documentclass[11pt]{article}
+\input{preamble}
+
+\begin{document}
+
+\title{Structured Orb Dynamics:\\ Unified Manuscript and Data Repository}
+\author{Cassandra Perry}
+\date{\today}
+
+\maketitle
+
+\begin{abstract}
+Infrared videos of airborne objects are often hard to analyze in a formal sense. 
+Most of them offer almost no information about range, calibration, or platform motion, 
+so many of the usual tools for interpreting motion are simply unavailable. 
+Still, the image plane carries enough geometric structure to say something about how an 
+object’s apparent motion changes over time, as long as the analysis stays anchored to what 
+the footage actually shows.
+
+Structured Orb Dynamics is a geometry–first framework built with that constraint in mind. 
+It reconstructs a stabilized trajectory, evaluates quantities such as curvature, short-term 
+directional changes, and apparent speed, and then groups the motion into a small set of 
+geometric states. The aim is not to extract forces or suggest what the object might be. 
+It is to provide a clear and repeatable way to describe the motion when physical 
+information is missing.
+
+The PR--018 infrared recording serves as an example of how this works in practice. 
+Because the target remains visible and roughly stabilized, the method highlights long 
+straight stretches, a sustained turning interval, and several brief low-velocity moments 
+where the geometry becomes harder to interpret. These findings do not identify the object, 
+but they do outline what the video reliably contains and where its interpretive limits begin.
+\end{abstract}
+
+\section*{Contributions}
+
+This work develops a unified, geometry–only framework for describing motion in infrared videos that lack physical calibration. The main contributions are:
+
+\begin{enumerate}
+    \item \textbf{A reproducible trajectory reconstruction pipeline.}  
+    We outline a minimal and transparent procedure for extracting and smoothing image-plane trajectories from stabilized infrared recordings. The steps are intentionally simple so that they can be followed, adapted, or audited without relying on metadata that is not available in the footage.
+
+    \item \textbf{A set of geometric quantities suited to limited information.}  
+    The framework focuses on curvature, directional change, and apparent speed—signals that remain interpretable even when scale, range, and platform telemetry are unknown. These quantities form the basis for all later analysis and tie the method to what the footage directly supports.
+
+    \item \textbf{A motion-state classifier and associated transition structure.}  
+    Local segments of the trajectory are grouped into Straight, Turn, Hover, or Orb regimes using a modest and interpretable classifier. A simple transition logic summarizes how these regimes evolve over time. Both components are designed to reflect geometric behavior alone and avoid assumptions about underlying physical mechanisms.
+
+    \item \textbf{A detailed application to the PR--018 dataset.}  
+    The full Structured Orb Dynamics workflow is applied to a publicly released infrared recording to illustrate what can—and cannot—be inferred from geometric information alone. The results show long straight intervals, a sustained turning segment, and brief low-velocity moments where the geometry becomes harder to interpret. These observations demonstrate both the strengths and the limits of the framework under real observational conditions.
+\end{enumerate}
+
+Taken together, these components form a coherent system for describing motion when only the image plane is available. The goal is not to identify the object or explain its cause, but to document its observable structure in a consistent and repeatable way.
+
+\tableofcontents
+\clearpage
+
+% ======================================
+% PART I – INSTRUMENTATION & PIPELINE
+% ======================================
+
+\section*{Part I: Instrumentation and Reconstruction Pipeline}
+\addcontentsline{toc}{section}{Part I: Instrumentation and Reconstruction Pipeline}
+\input{manuscripts/Part_I_Instrumentation_Model/part1}
+
+\clearpage
+
+% ======================================
+% PART II – THEORETICAL FRAMEWORK
+% ======================================
+
+\section*{Part II: Theoretical Model}
+\addcontentsline{toc}{section}{Part II: Theoretical Framework}
+\label{sec:part2_intro}
+\input{manuscripts/Part_II_Structured_Orb_System/part2}
+
+\clearpage
+
+% ============================
+% PART III – MOTION-STATE CLASSIFIER
+% ============================
+
+\section*{Part III: Motion-State Classifier}
+\addcontentsline{toc}{section}{Part III: Motion-State Classifier}
+\label{sec:part3_classifier}
+\input{manuscripts/Part_III_Classifier/part3}
+
+To ensure that identified motion-state transitions reflect observable structure rather than estimator artifacts, we apply a small set of non-causal robustness checks summarized in Appendix~\ref{app:robustness}.
+
+\clearpage
+
+% ======================================
+% PART IV – PR-018 DEEP ANALYSIS
+% ======================================
+
+\section*{Part IV: PR-018 Deep Analysis}
+\addcontentsline{toc}{section}{Part IV: PR-018 Deep Analysis}
+\input{manuscripts/Part_IV_PR018_Deep_Analysis/part4}
+
+\clearpage
+
+% =======================
+% Part V — Unified Framework
+% =======================
+\input{manuscripts/Part_V_Unified_Framework/part5}
+
+% ======================================
+% SUPPLEMENTARY GIMBAL ANALYSIS
+% ======================================
+
+\section*{Supplementary GIMBAL Analysis}
+\addcontentsline{toc}{section}{Supplementary GIMBAL Analysis}
+\input{manuscripts/Supplementary_GIMBAL_Analysis/gimbal}
+
+\clearpage
+
+\section*{Author Contributions}
+\addcontentsline{toc}{section}{Author Contributions}
+
+Cassandra Perry: Conceptualization; methodology; data curation; geometric analysis; model
+development; manuscript preparation; validation; software design; interpretation of results;
+project administration.
+
+% ======================================
+% ACKNOWLEDGMENTS
+% ======================================
+\section*{Acknowledgments}
+\addcontentsline{toc}{section}{Acknowledgments}
+
+The author gratefully acknowledges the support of the AI research assistant 
+``Eleanor,'' whose contributions in structuring mathematical arguments, refining 
+methodological clarity, and assisting with manuscript organization facilitated 
+the development of this unified framework. All conceptual decisions, 
+interpretations, and conclusions are solely those of the author.
+
+The author also thanks the open-science community for maintaining accessible 
+archival infrastructure and acknowledges the value of public-domain sensor data 
+that enables reproducible geometric analysis.
+
+\clearpage
+
+% ======================================
+% DISCUSSION AND OUTLOOK
+% ======================================
+
+\section*{Discussion and Outlook}
+\addcontentsline{toc}{section}{Discussion and Outlook}
+
+The unified geometric motion-state framework introduced in this manuscript 
+demonstrates that quantitative inference is possible even when physical metadata, 
+telemetry, and calibration information are incomplete. By grounding the analysis 
+in curvature, its temporal evolution, and dimensionless kinematic structure, the 
+approach offers a reproducible method for describing unknown aerial trajectories 
+in a manner that is conservative, interpretable, and consistent across 
+heterogeneous datasets.
+
+The PR-018 analysis shows that certain curvature regimes---most notably the 
+smooth, bounded-curvature patterns associated with the orb state---persist across 
+hundreds of frames and remain stable under reasonable choices of smoothing and 
+derivative estimation. By contrast, the GIMBAL supplement illustrates how the 
+same framework behaves under conditions where trajectory reconstruction is not 
+possible. Taken together, these cases highlight the strengths, limitations, and 
+future directions for geometric motion analysis in the absence of conventional 
+metadata.
+
+Future work will extend the classifier, refine curvature-based diagnostics, and 
+explore methods for multi-sensor fusion when partial telemetry is available. The 
+broader outlook is the development of a generalizable motion-analysis toolkit 
+suitable for research domains where observational constraints are the norm rather 
+than the exception.
+
+\clearpage
+
+% ======================================
+% DATA AVAILABILITY
+% ======================================
+
+\section*{Data Availability}
+\addcontentsline{toc}{section}{Data Availability}
+
+All reconstructed trajectories, derived curvature products, classifier outputs, 
+and analysis scripts used in this work are publicly available in a versioned 
+Zenodo repository associated with this manuscript. The PR-018 and GIMBAL 
+infrared videos analyzed herein are publicly released products of the U.S. 
+Department of Defense.
+
+\clearpage
+
+% ======================================
+% SOFTWARE AVAILABILITY
+% ======================================
+
+\section*{Software Availability}
+\addcontentsline{toc}{section}{Software Availability}
+
+The full implementation of the Orb Motion Classifier---including trajectory 
+processing, curvature estimation, state-likelihood evaluation, and posterior 
+inference---is available on GitHub under an open license. The repository 
+provides complete documentation, reproducible scripts, and archived releases 
+linked to Zenodo DOIs for long-term preservation.
+
+\clearpage
+
+\appendix
+\section{Observable Robustness and Non-Causal Validation}
+\label{app:robustness}
+
+\noindent\textit{Status: protocol-ready.} The checks below define a non-causal robustness protocol intended for systematic application across datasets and figures, and may be applied selectively depending on data quality and availability.
+
+\subsection{Track Continuity}
+We verify continuity of the tracked trajectory across transition boundaries using an arc-length or speed proxy,
+\[
+\Delta s_t = \lVert \mathbf{x}_{t+1} - \mathbf{x}_t \rVert,
+\]
+to confirm that no discontinuities arise from sampling gaps, re-indexing, or tracking loss. Sustained continuity across the transition supports interpretation as a single, coherent track.
+
+\subsection{Estimator Robustness}
+Curvature-based segmentation is evaluated under modest methodological perturbations, including smoothing variation, temporal subsampling, and alternative discrete curvature estimators (e.g., turning-angle-based versus multi-point curvature). A transition window is considered robust if its presence and temporal ordering persist across these variations.
+
+\subsection{Change-Point Detection}
+To reduce reliance on manually selected thresholds, algorithmic change-point detection is applied to the curvature time series. Agreement between detected change points and segmentation boundaries supports algorithmic identification of transition intervals.
+
+\subsection{Uncertainty and Baseline Distinction}
+Baseline curvature variability is estimated for low-curvature segments to construct a simple uncertainty or confidence band. Transition intervals are evaluated for sustained deviation beyond baseline variability, distinguishing structured curvature elevation from noise fluctuations.
+
+\clearpage
+\bibliographystyle{ieeetr}
+\bibliography{references}
+
+\end{document}
