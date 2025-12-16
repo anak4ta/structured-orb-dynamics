@@ -5,7 +5,7 @@ Looking for the Geometry-First framework? Start with the [methodology folder her
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17846786.svg)](https://doi.org/10.5281/zenodo.17846786)
 
 # Structured Orb Dynamics  
-Unified Manuscript and Data Repository (v1.2.0)
+Unified Manuscript and Data Repository 
 
 This repository contains the materials supporting the study *Structured Orb Dynamics*.  
 All components—manuscript, data, and analysis code—are kept together for transparency and reproducibility.
@@ -17,6 +17,23 @@ No physical assumptions are imposed; all results derive strictly from what can b
 A standard scientific Python stack is sufficient (numpy, scipy, matplotlib).
 
 ---
+
+## Latest Update (v1.3.0)
+
+**Methodological robustness update.**
+
+This release adds **Appendix A: Observable Robustness and Non-Causal Validation**, defining a protocol-ready set of non-causal checks for curvature-based motion-state transitions, including:
+
+- Track continuity verification
+- Estimator robustness under smoothing and subsampling
+- Algorithmic change-point detection
+- Baseline uncertainty and confidence distinction
+
+No results, datasets, figures, or conclusions were changed.
+
+> **Note on versioning:**  
+> Zenodo assigns internal archival version numbers to each record update.  
+> The manuscript’s semantic version (v1.3.0) is authoritative and is reflected in the title, changelog, and release notes.
 
 ## Downloads (v1.2.0)
 
