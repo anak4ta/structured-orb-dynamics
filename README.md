@@ -35,13 +35,17 @@ No results, datasets, figures, or conclusions were changed.
 > Zenodo assigns internal archival version numbers to each record update.  
 > The manuscript’s semantic version (v1.3.0) is authoritative and is reflected in the title, changelog, and release notes.
 
-## Downloads (v1.2.0)
+## Downloads
 
-Unified Manuscript (PDF):  
-https://zenodo.org/records/17904630/files/Structured_Orb_Dynamics___Unified_Manuscript___Data_Repository.pdf
+The latest version of the unified manuscript and full repository snapshot is archived on Zenodo:
 
-Full Repository Snapshot (ZIP):  
-https://zenodo.org/records/17904630/files/Structured_Orb_Dynamics___Unified_Manuscript___Data_Repository.zip
+- **Concept DOI (always resolves to the latest version):**  
+  https://doi.org/10.5281/zenodo.17945669
+
+This DOI provides access to:
+- The unified manuscript (PDF)
+- A full repository snapshot (ZIP)
+- Versioned archival records for citation and reproducibility
 
 ---
 
