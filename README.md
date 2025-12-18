@@ -8,6 +8,8 @@ https://github.com/cperryresearch/structured-orb-dynamics/tree/main/methodology
 # Structured Orb Dynamics  
 Unified Manuscript and Data Repository
 
+This repository is intended for researchers interested in geometry-based motion characterization under uncertainty.
+
 This repository contains the materials supporting the study *Structured Orb Dynamics*.  
 All components — manuscript, data, and analysis code — are maintained together to support transparency and reproducibility.
 
