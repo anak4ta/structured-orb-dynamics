@@ -1,37 +1,49 @@
 ## 📍 Geometry-First Motion Analysis
 
-Looking for the Geometry-First framework? Start with the [methodology folder here](https://github.com/cperryresearch/structured-orb-dynamics/tree/main/methodology).
+Looking for the geometry-first framework? Start with the methodology overview here:  
+https://github.com/cperryresearch/structured-orb-dynamics/tree/main/methodology
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17846786.svg)](https://doi.org/10.5281/zenodo.17846786)
 
 # Structured Orb Dynamics  
-Unified Manuscript and Data Repository 
+Unified Manuscript and Data Repository
 
 This repository contains the materials supporting the study *Structured Orb Dynamics*.  
-All components—manuscript, data, and analysis code—are kept together for transparency and reproducibility.
+All components — manuscript, data, and analysis code — are maintained together to support transparency and reproducibility.
 
 The project analyzes image-plane motion using a minimal set of geometric tools.  
-Curvature, basic derivative estimates, and a simple state model are used to summarize the apparent motion in a stabilized infrared recording (PR-018).  
-No physical assumptions are imposed; all results derive strictly from what can be measured directly in the video frames.
+Curvature, basic derivative estimates, and a simple state model are used to summarize apparent motion in stabilized infrared recordings (PR-018).  
+No physical assumptions are imposed; all results derive strictly from quantities observable in the image plane.
 
-A standard scientific Python stack is sufficient (numpy, scipy, matplotlib).
+A standard scientific Python stack is sufficient (NumPy, SciPy, Matplotlib).
 
 ---
 
-## Latest Update (v1.3.0)
+## Citation and Archival Record
 
-**Methodological robustness update.**
+The Structured Orb Dynamics project is archived on Zenodo.
 
-This release adds **Appendix A: Observable Robustness and Non-Causal Validation**, defining a protocol-ready set of non-causal checks for curvature-based motion-state transitions, including:
+- **Latest version (v1.4.0 — Exploratory Extension):**  
+  https://zenodo.org/records/17971372
 
-- Track continuity verification
-- Estimator robustness under smoothing and subsampling
-- Algorithmic change-point detection
-- Baseline uncertainty and confidence distinction
+- **Concept DOI (resolves to all versions):**  
+  https://doi.org/10.5281/zenodo.17846786
 
-No results, datasets, figures, or conclusions were changed.
+---
 
-**Note on versioning:** Zenodo assigns internal archival version numbers to each record update. The manuscript’s semantic version (v1.3.0) is authoritative and is reflected in the title, changelog, and release notes.
+## Latest Update (v1.4.0)
+
+**Exploratory extension to biological migration systems.**
+
+This release introduces **Part VI-A**, applying the Structured Orb Dynamics (SOD) state machinery to a known-class biological motion system: seasonal continental migration of passerine birds (Movebank GPS data).
+
+The extension is **methodological and descriptive** in scope. It evaluates whether SOD’s geometry-first, state-based segmentation remains coherent under realistic, non-anomalous partial-observation constraints.
+
+- Core SOD definitions and kinematic state criteria remain unchanged
+- Existing UAP analyses (Parts I–V) are not modified or reinterpreted
+- No new empirical claims, causal explanations, or behavioral interpretations are introduced
+
+---
 
 ## Author
 
@@ -39,19 +51,22 @@ No results, datasets, figures, or conclusions were changed.
 Independent Researcher  
 ORCID: https://orcid.org/0009-0001-1998-1481
 
+---
+
 ## Downloads
 
-The latest version of the unified manuscript and full repository snapshot is archived on Zenodo:
+The unified manuscript and full repository snapshot are archived on Zenodo:
+
+- **Latest version (v1.4.0):**  
+  https://zenodo.org/records/17971372
 
 - **Concept DOI (always resolves to the latest version):**  
-  https://doi.org/10.5281/zenodo.17945669
+  https://doi.org/10.5281/zenodo.17846786
 
-This DOI provides access to:
-- The unified manuscript (PDF)
-- A full repository snapshot (ZIP)
-- Versioned archival records for citation and reproducibility
-
-For citation, use the concept DOI (it always resolves to the latest archived version).
+Each record includes:
+- Unified manuscript (PDF)
+- Full repository snapshot (ZIP)
+- Versioned archival metadata for citation and reproducibility
 
 ---
 
@@ -112,22 +127,20 @@ These components will be added in future versioned releases.
 ## Citation
 
 Use the Zenodo concept DOI above to cite the latest version of this repository.
-
-If this repository or its methods are used, please cite:
-
-Perry, C. (2025). *Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.2.0).* Zenodo.  
-https://doi.org/10.5281/zenodo.17904630
-
-For references to the evolving project and its complete version history, use the concept DOI:  
 https://doi.org/10.5281/zenodo.17846786
 
+For version-specific citation (v1.4.0):
+
+Perry, C. (2025). Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.4.0 — Exploratory Extension). Zenodo.
+https://zenodo.org/records/17971372
+
 ### BibTeX
-@misc{perry2025_structured_orb_dynamics_v120,
+@misc{perry2025_structured_orb_dynamics_v140,
   author    = {Perry, Cassandra},
-  title     = {Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.2.0)},
+  title     = {Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.4.0 — Exploratory Extension)},
   year      = {2025},
-  doi       = {10.5281/zenodo.17904630},
-  url       = {https://doi.org/10.5281/zenodo.17904630},
+  doi       = {10.5281/zenodo.17971372},
+  url       = {https://doi.org/10.5281/zenodo.17971372},
   publisher = {Zenodo}
 }
 
