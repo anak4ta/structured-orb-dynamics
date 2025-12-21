@@ -163,7 +163,7 @@ https://zenodo.org/records/18003762
   author    = {Perry, Cassandra},
   title     = {Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.5.0 — Validation Release)},
   year      = {2025},
-  doi       = {10.5281/zenodo.XXXXXXXX},
+  doi       = {10.5281/zenodo.18003762},
   url       = {https://doi.org/10.5281/zenodo.XXXXXXXX},
   publisher = {Zenodo}
 }
