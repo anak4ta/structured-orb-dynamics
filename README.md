@@ -25,25 +25,44 @@ A standard scientific Python stack is sufficient (NumPy, SciPy, Matplotlib).
 
 The Structured Orb Dynamics project is archived on Zenodo.
 
-- **Latest version (v1.4.0 — Exploratory Extension):**  
-  https://zenodo.org/records/17971372
+- **Latest version (v1.5.0 — Validation Release):**  
+  https://zenodo.org/records/18003762
 
 - **Concept DOI (resolves to all versions):**  
   https://doi.org/10.5281/zenodo.17846786
 
 ---
 
-## Latest Update (v1.4.0)
+## Latest Update (v1.5.0)
 
-**Exploratory extension to biological migration systems.**
+**Validation-focused release confirming SOD restraint.**
 
-This release introduces **Part VI-A**, applying the Structured Orb Dynamics (SOD) state machinery to a known-class biological motion system: seasonal continental migration of passerine birds (Movebank GPS data).
+This release extends Part VI with two rigorously bounded validation studies designed
+to test failure modes of the Structured Orb Dynamics (SOD) state framework under
+realistic biological motion conditions.
 
-The extension is **methodological and descriptive** in scope. It evaluates whether SOD’s geometry-first, state-based segmentation remains coherent under realistic, non-anomalous partial-observation constraints.
+### Added in v1.5.0
 
-- Core SOD definitions and kinematic state criteria remain unchanged
-- Existing UAP analyses (Parts I–V) are not modified or reinterpreted
-- No new empirical claims, causal explanations, or behavioral interpretations are introduced
+**Part VI-B — Formal Negative Control**
+- Barn Swallow (Hirundidae) GPS data at coarse cadence (600 s)
+- Empirically derived hover threshold (P10 speed)
+- Persistence gating enforced
+- Result: **0% Hover occupancy**, as expected
+
+**Part VI-C — High-Cadence Boundary Test**
+- High-frequency (300 Hz) hummingbird flight trials
+- Same hover rule and persistence requirements applied unchanged
+- Result: **No persistent Hover state identified**
+
+### Interpretation
+
+These results demonstrate that:
+- Increased sampling cadence alone is insufficient to produce Hover classification
+- Persistence gating prevents spurious state detection
+- The SOD framework remains conservative under both coarse and fine sampling
+
+No new empirical claims are introduced.
+Core SOD definitions, thresholds, and state rules remain unchanged.
 
 ---
 
@@ -59,12 +78,12 @@ ORCID: https://orcid.org/0009-0001-1998-1481
 
 The unified manuscript and full repository snapshot are archived on Zenodo:
 
-- **Latest version (v1.4.0):**  
-  https://zenodo.org/records/17971372
+- **Latest version (v1.5.0):**  
+  https://zenodo.org/records/18003762
 
 - **Concept DOI (always resolves to the latest version):**  
   https://doi.org/10.5281/zenodo.17846786
-
+  
 Each record includes:
 - Unified manuscript (PDF)
 - Full repository snapshot (ZIP)
@@ -115,14 +134,16 @@ No trajectory could be extracted, and therefore no curvature or state estimates 
 
 ## Research Roadmap
 
-The current release corresponds to the unified foundation (Parts I–V).
+The current release corresponds to the unified foundation (Parts I–V) with
+validation extensions in Part VI.
 
 Planned future work includes:
-- Part VI: Comparative multi-dataset analysis
+- Extended comparative datasets (Part VI continuation)
 - Part VII: Orb Motion Classifier (machine learning)
 - Part VIII: Physics-informed kinematic envelope analysis
 
-These components will be added in future versioned releases.
+All future extensions will retain geometry-first constraints and explicit
+negative controls.
 
 ---
 
@@ -131,18 +152,19 @@ These components will be added in future versioned releases.
 Use the Zenodo concept DOI above to cite the latest version of this repository.
 https://doi.org/10.5281/zenodo.17846786
 
-For version-specific citation (v1.4.0):
+For version-specific citation (v1.5.0):
 
-Perry, C. (2025). Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.4.0 — Exploratory Extension). Zenodo.
-https://zenodo.org/records/17971372
+Perry, C. (2025). Structured Orb Dynamics: Unified Manuscript and Data Repository
+(v1.5.0 — Validation Release). Zenodo.
+https://zenodo.org/records/18003762
 
 ### BibTeX
-@misc{perry2025_structured_orb_dynamics_v140,
+@misc{perry2025_structured_orb_dynamics_v150,
   author    = {Perry, Cassandra},
-  title     = {Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.4.0 — Exploratory Extension)},
+  title     = {Structured Orb Dynamics: Unified Manuscript and Data Repository (v1.5.0 — Validation Release)},
   year      = {2025},
-  doi       = {10.5281/zenodo.17971372},
-  url       = {https://doi.org/10.5281/zenodo.17971372},
+  doi       = {10.5281/zenodo.XXXXXXXX},
+  url       = {https://doi.org/10.5281/zenodo.XXXXXXXX},
   publisher = {Zenodo}
 }
 
